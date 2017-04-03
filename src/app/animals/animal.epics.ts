@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import { Epic, createEpicMiddleware } from 'redux-observable';
-import { Action, Store } from 'redux';
+import { /* Epic, */ createEpicMiddleware } from 'redux-observable';
+//import { Action, Store } from 'redux';
 import { of } from 'rxjs/observable/of';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
 
-import { AnimalType, ANIMAL_TYPES } from '../animals/animal.types';
+import { AnimalType /*, ANIMAL_TYPES*/ } from '../animals/animal.types';
 import { AnimalActions } from '../animals/animal.actions';
 import { AnimalService } from './animal.service';
 

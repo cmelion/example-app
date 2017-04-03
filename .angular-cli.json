@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "example-app"
+    "name": "zoo-animals"
   },
   "apps": [
     {
@@ -19,19 +19,20 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "zoo",
       "styles": [
-        "styles.css"
+        "styles.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
+        "hmr": "environments/environment.hmr.ts",
         "prod": "environments/environment.prod.ts"
       }
     }
   ],
   "e2e": {
     "protractor": {
-      "config": "./protractor.conf.js"
+      "config": "./config/protractor.conf.js"
     }
   },
   "lint": [
@@ -50,7 +51,7 @@
   ],
   "test": {
     "karma": {
-      "config": "./karma.conf.js"
+      "config": "./config/karma.conf.js"
     }
   },
   "defaults": {
