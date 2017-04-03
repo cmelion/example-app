@@ -5,9 +5,11 @@
 }
 
 content {
-  display: block;
+  display: flex;
   padding: 10px;
   border: solid gray 1px;
   border-radius: 5px;
   margin-top: 1rem;
+  background-color: green;
+  min-height: 300px;
 }
